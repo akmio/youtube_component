@@ -1,0 +1,11 @@
+/.idea/
+/bitrix/
+/upload/
+/test*
+.htaccess
+
+*.xml
+*.html
+*.txt
+*.log
+*.css.map
