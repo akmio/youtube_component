@@ -29,6 +29,20 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
 	</div>
 <?endif?>
 
+<?$APPLICATION->IncludeComponent(
+    "dev:search.youtube",
+    "",
+    Array(
+        "CACHE_GROUPS" => "Y",
+        "CACHE_TIME" => "36000000",
+        "CACHE_TYPE" => "A",
+        "IBLOCK_ID" => "4",
+        "IBLOCK_TYPE" => "content",
+        "VIDEO_COUNT" => "10",
+        "YOUTUBE_KEY" => "AIzaSyACfXvJrjgQr4xTf2bRqQPITHahephMWp8"
+    )
+);?>
+
 <?
 global $trendFilter;
 $trendFilter = array('PROPERTY_TREND' => '4');
